@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheng Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <!-- ___________________________________word____________________  -->
+    <div class="right">
+          <h1>Hotline: 0904098763</h1>
+        </div>          
+    <div  class="container">
+        <!-- Tab items -->
+        <div class="tabs">
+            <div class="tab-item active">
+                <i class="tab-icon"></i>
+                React
+            </div>
+            <div class="tab-item">
+                <i class="tab-icon"></i>
+                Angular
+            </div>
+            <div class="tab-item">
+                <i class="tab-icon"></i>
+                Ember
+            </div>
+            <div class="tab-item">
+                <i class="tab-icon"></i>
+                Vue.JS
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="right_board">
+        <button class="btn button1">Click here !</button>
+        <a href="https://www.facebook.com/KYSheng2003/" target=_blank>
+            <button class="btn button2">Contact us</button>
+        </a>
+        <div class="move">
+            <a  href="#table1" target=_self>table</a>
+            <a  href="#audio1" target=_self>audio</a>
+            <a  href="#clip1" target=_self>clip</a>
+        </div>    
+    </div>
+    <div><!-- Tab content -->         
+        <div class="tab-content">
+            <div class="tab-pane active">
+            <h2>React</h2>
+            <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+            </div>
+            <div class="tab-pane">
+            <h2>Angular</h2>
+            <p>Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+            </div>
+            <div class="tab-pane">
+            <h2>Ember</h2>
+            <p>Ember.js is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.</p>
+            </div>
+            <div class="tab-pane">
+            <h2>Vue.js</h2>
+            <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. </p>
+        </div>
+    </div>  
+    <!-- ____________________________________________________________-->
+    <button id="button1" onclick="dosomething()"style="color:#00FF00;border-radius:5px"> Do something </button>
+    <p id="test">Hello</p>    
+    <script>
+        function dosomething(){
+            document.getElementById("test").innerHTML+="GoodBye";
+        }
+    </script>   
+    
+    <div>
+        <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="My name is sheng" maxlenght="12" required>
+        </div>
+            <input type="number" min="0" max="10" value="1">
+            <input type="reset">
+            <input type="submit" id="submit_button">
+        </div>
+
+        <div>
+            <label for="title">the most professional: </label>
+            <label for="Sheng">Mr.Sheng</label>
+            <input type="radio" name="title" value="Sheng">
+
+            <label for="Ha">Mr.Ha</label>
+            <input type="radio" name="title" value="Ha">
+
+            <label for="Tai">Mr.Tai</label>
+            <input type="radio" name="title" value="Tai">
+        </div>
+
+        <div>
+            <label for="payment">payment:</label>
+            <select id="payment" namae="payment">
+                <option value="visa">visa</option>
+                <option value="giftcard<">giftcard</option>
+                <option value="mastercard">mastercard</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subcribe" name="subscribe" value="yes">
+        </div>
+        <script src="index.js">
+        </script>
+    </div> 
+    <br>
+     <a href="http://www.google.com" target=_self title="This take you to google">
+        <img src="cute.jpg" alt="this is cute" id="lover" />
+    </a>
+    <br>
+    <iframe width="560" height="315" muted autoplay src="https://www.youtube.com/embed/FmL4DS4XMow"></iframe>
+    <br>
+    <table bgcolor="black" width="700" id="table1">
+            <tr bgcolor="red">
+            <th width="100">Color</td>
+            <th width="100">Name</td>
+            <th width="100">Hobby</td>
+            <th width="100">gender</td>
+            </tr>
+            <tr bgcolor="lightred">
+            <td>pink</td>
+            <td>Minh Anh</td>
+            <td>Film</td>
+            <td>Female</td>
+            </tr>
+    </table class="topclick1">
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <p>alo đâs dddddddddddddddddddddddddddddddddddddddd</p>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const tabs = $$(".tab-item");
+        const panes = $$(".tab-pane");
+
+        const tabActive = $(".tab-item.active");
+        const line = $(".tabs .line");
+
+        line.style.left = tabActive.offsetLeft + "px";
+        line.style.width = tabActive.offsetWidth + "px";
+
+        tabs.forEach((tab, index) => {
+        const pane = panes[index];
+
+        tab.onclick = function () {
+            $(".tab-item.active").classList.remove("active");
+            $(".tab-pane.active").classList.remove("active");
+            line.style.left = this.offsetLeft + "px";
+            line.style.width = this.offsetWidth + "px";
+
+            this.classList.add("active");
+            pane.classList.add("active");
+        };
+        });
+    </script>    
+</body>
+</html>

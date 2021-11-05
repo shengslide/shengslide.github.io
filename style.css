@@ -1,0 +1,171 @@
+html{scroll-behavior: smooth;}
+.container{
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-color: #333;
+  width:100%;
+  height:54px;
+  z-index:10 ;
+  line-height: 50px;
+  align-items: right;
+}
+.right{
+  position:fixed;
+  float:right;
+  right:20px;
+  color:red; 
+  font-size: 10px;
+  z-index: 50;
+}
+.tabs {
+  position: relative;
+  display: flex;
+}
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #04AA6D;
+  transition: all 0.2s ease;
+}
+.tab-item {
+  min-width: 50px;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+  color: #04AA6D;
+  background-color: #fff;
+  /* border-top-left-radius: 5px; */
+  /* border-top-right-radius: 5px; */
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.tab-item.active {
+  opacity: 1;
+}
+/* -------------------------------------------------------------------- */
+.right_board{
+  position:fixed;
+  right:0px;
+  background-color:black;  
+  width:200px;
+  height:100%;
+  z-index:5;
+}
+.btn{
+  position:relative;
+  top:60px;
+  left:20px;
+  text-decoration:none;  /*delete underline */
+  background-color: transparent;
+  border:none;
+  color:#f2f2f2;
+  padding:12px 48px;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: opacity .2s ease;  /*giúp hiển thị mượt hơn  */
+} 
+.btn+ .btn{
+  margin-top:8px;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn_disabled{
+  opacity:0.5 !important; /* loai bo hieu ung hover*/
+  cursor:default;
+}
+.button1{
+  background-color:#04AA6D;
+}
+.button2{
+  background-color:darkgray;
+  margin-top:8px;
+}
+.right_board .move a{
+  position:relative;
+  top:100px;
+  left:5px;
+  border-left:2px solid #ddd;
+  padding-left:8px;
+  color: #f2f2f2;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.right_board .move a:hover {
+  background-color: #ddd;
+  color: black;
+}
+body{
+background-image: url("cute.jpg");
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-position:center;
+background-size:cover;
+}
+.tab-content {
+  position:relative;
+  top:70px;
+  left:20px;
+  max-width: 720px;
+  background-color:white;
+  border-radius:10px;
+  border:2px;
+  border-color: black;
+  background-color: whitesmoke;
+  box-shadow: -10px -10px 10px white, 10px 10px 10px grey;
+  padding: 5px 20px 5px 20px;
+}
+.tab-pane {
+  color: #333;
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.tab-pane h2 {
+  font-size: 24px;
+}
+#button1{
+  position:relative;
+  margin-top:100px;
+  animation: myOpacity;
+  animation-play-state:running;
+  animation-iteration-count:infinite;
+  animation-delay:0s;
+  /* set thuộc tính*/
+  animation-timing-function:linear;
+  animation-duration:5s;
+  /* animation: 3s linear 0s infinite run1; */
+}
+@keyframes run1{
+  from{margin-left:100%;}
+  to{margin-left:0%}
+}
+@keyframes myOpacity{
+  10%{opacity:0;}
+}
+@keyframes myRotate{
+  100%{transform: rotateZ(360deg);}
+}
+@keyframes myScale{
+  100%{transform: Scale(0.5,0.5);}
+}
+@keyframes myColorChange {
+  20%{background-color:orange;}
+  40%{background-color:yellow;}
+  60%{background-color:green;}
+  80%{background-color:blue;}
+  100%{background-color:purple;}
+}
